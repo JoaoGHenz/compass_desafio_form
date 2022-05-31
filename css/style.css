@@ -1,7 +1,30 @@
 body {
-    background: #E5E5E5;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 100px;
+    align-items: flex-end;
+    background-color: #E5E5E5;
+}
+
+* {
+    font-family: 'Nunito', sans-serif;
 }
 
 .main-panel {
+    border-radius: 5%;
+    width: 620px;
+    height: 763px;
+
+
     background: #FFFFFF;
+}
+
+.panel-title {
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+
 }
