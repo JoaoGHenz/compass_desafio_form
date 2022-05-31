@@ -11,15 +11,23 @@ body {
     font-family: 'Nunito', sans-serif;
 }
 
+/*Main Panel*/
+
 .main-panel {
     border-radius: 5%;
     width: 620px;
-    height: 763px;
-
+    height: 763px; 
+    
+    /*Sera???*/
+    /*display: flex;
+    flex-flow: column;*/
+    /*Sera???*/
 
     background: #FFFFFF;
 }
 
+
+/*Panel Title (Cloud image and Title)*/
 .panel-title {
     display: block;
     display: flex;
@@ -28,3 +36,185 @@ body {
     flex-flow: column;
 
 }
+
+.panel-title .cloud{
+    margin-top: 30px;
+}
+
+.panel-title h1{
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 24px;
+}
+
+/*End of Title Panel*/
+
+/*Main Form (forms and buttons)*/
+.main-form {
+    display:flex;
+    flex-flow: row wrap;
+    align-items: stretch;
+    align-content: space-around;
+    /*CHANGE LATER*/
+    height: 510px;
+    /*CHANGE LATER*/
+}
+
+.main-form label{
+    margin: 5px;
+    flex: 1;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: #767676;
+    display: flex;
+    align-items: flex-end;
+}
+
+/*----------TESTING----------*/
+
+.form-type-1 {
+    box-sizing: border-box;
+
+    width: 515px;
+    height: 40px;
+    left: 238px;
+    top: 533px;
+
+    /* Surface */
+
+    background: #FFFFFF;
+    /* Border / Subtle */
+
+    border: 2px solid #AAAAAA;
+    border-radius: 4px;
+}
+
+
+.form-type-2 {
+    box-sizing: border-box;
+
+    width: 330px;
+    height: 40px;
+    left: 237px;
+    top: 645px;
+
+    /* Surface */
+
+    background: #FFFFFF;
+    /* Border / Subtle */
+
+    border: 2px solid #AAAAAA;
+    border-radius: 4px; 
+}
+
+.form-type-3 {
+    box-sizing: border-box;
+
+    width: 162px;
+    height: 40px;
+    left: 591px;
+    top: 645px;
+
+    /* Surface */
+
+    background: #FFFFFF;
+    /* Border / Subtle */
+
+    border: 2px solid #AAAAAA;
+    border-radius: 4px;
+}
+
+.checkbox {
+
+    box-sizing: border-box;
+
+    width: 20px;
+    height: 20px;
+
+    background: #0DBDBD;
+    border: 2px solid #0DBDBD;
+    border-radius: 2px;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+    width: 12px;
+    height: 9.42px;
+    left: calc(50% - 12px/2 - 0.01px);
+    top: calc(50% - 9.42px/2 + 0.29px);
+
+    /* Surface */
+
+    background: #FFFFFF;
+}
+
+.checkbox-text {
+    width: 214px;
+    height: 18px;
+
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    /* identical to box height, or 112% */
+
+
+    /* Text / Normal */
+
+    color: #111111;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.button {
+    display: flex;
+    flex-direction: row;
+        justify-content: center;
+    align-items: center;
+    padding: 0px 12px;
+    gap: 6px;
+
+    width: 81px;
+    height: 40px;
+    left: 670px;
+    top: 941px;
+
+    background: #0DBDBD;
+    border-radius: 10px;
+
+
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    /* identical to box height, or 112% */
+
+    display: flex;
+    align-items: center;
+
+    /* Surface */
+
+    color: #FFFFFF;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+}
+
+/*----------TESTING ENDS----------*/
