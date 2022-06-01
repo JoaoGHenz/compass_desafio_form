@@ -14,7 +14,7 @@ body {
 /*Main Panel*/
 
 .main-panel {
-    border-radius: 5%;
+    border-radius: 20px;
     width: 620px;
     height: 763px; 
     
@@ -63,21 +63,22 @@ body {
     flex-flow: row wrap;
     align-items: stretch;
     align-content: space-around;
-    margin: 0 40px;
     /*CHANGE LATER*/
-    
+    /*AAA*/
+    width: 515px;
+    /*AAA*/
+    justify-content: space-between;
     /*CHANGE LATER*/
 }
 
 .main-form label{
-    margin: auto;
     font-family: 'Nunito';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     color: #767676;
     display: flex;
-    align-items: flex-start;
+    align-items: space-around;
 }
 
 /*----------TESTING----------*/
@@ -158,14 +159,13 @@ body {
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    margin: 0 40px;
+    width: 515px;
     flex-flow: row wrap;
 }
 
 .checkbox {
     display: flex;
     align-items: center;
-    margin: 0 11px;
     
 }
 
@@ -210,14 +210,11 @@ body {
     flex-grow: 0;
 }
 
-.submit {
-    margin: 0 12px;
-}
 
 .button {
     display: flex;
     flex-direction: row;
-        justify-content: center;
+    justify-content: center;
     align-items: center;
     padding: 0px 12px;
     gap: 6px;
@@ -258,12 +255,28 @@ flex-grow: 0;
 /*Footer Form*/
 
 
-@media screen and (max-width: 700) {
-    body {
-        display: flex;
-        align-content: center;
-        justify-content: center;
-        flex-flow: column wrap;
+@media only screen and (max-width: 360px) and (max-height: 760px) {
+
+    .main-panel {
+        border-radius: 0%;
+        height: 760px;
+        width: 360px;
+    }
+
+    .main-form {
+        max-width: 360px;
+    }
+
+    .label-form {
+        width: 100%;
+    }
+
+    .main-form label{
         margin: 0;
+
+    }
+
+    #form-input-name {
+        width: 100%;
     }
 }
