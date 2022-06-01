@@ -18,10 +18,10 @@ body {
     width: 620px;
     height: 763px; 
     
-    /*Sera???*/
-    /*display: flex;
-    flex-flow: column;*/
-    /*Sera???*/
+    
+    display: flex;
+    flex-flow: column;
+    
 
     background: #FFFFFF;
 }
@@ -29,7 +29,6 @@ body {
 
 /*Panel Title (Cloud image and Title)*/
 .panel-title {
-    display: block;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -50,19 +49,28 @@ body {
 
 /*End of Title Panel*/
 
-/*Main Form (forms and buttons)*/
+/*Main Form*/
+
+.main-panel form {
+    display: flex;
+    flex: 1;
+    flex-flow: wrap;
+    justify-content: center;
+}
+
 .main-form {
     display:flex;
     flex-flow: row wrap;
     align-items: stretch;
     align-content: space-around;
+    margin: 0 40px;
     /*CHANGE LATER*/
-    min-height: 510px;
+    
     /*CHANGE LATER*/
 }
 
 .main-form label{
-    margin: 5px;
+    margin: auto;
     font-family: 'Nunito';
     font-style: normal;
     font-weight: 400;
@@ -137,16 +145,47 @@ body {
     border-radius: 4px;
 }
 
-.checkbox {
+/*End of Main Form*/
 
+/*Footer Form*/
+
+.footer-form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 40px;
+    flex-flow: row wrap;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    margin: 0 11px;
+    
+}
+
+.checkbox input {
+    box-sizing: border-box;
+
+    width: 20px;
+    height: 20px;
+
+    background: #0DBDBD;
+    border: 2px solid #0DBDBD;
+    border-radius: 2px;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
     
 }
 
 .checkbox-text {
     width: 214px;
     height: 18px;
-
-    font-family: 'Nunito';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -164,6 +203,10 @@ body {
     flex: none;
     order: 1;
     flex-grow: 0;
+}
+
+.submit {
+    margin: 0 11px;
 }
 
 .button {
@@ -207,5 +250,6 @@ flex-grow: 0;
 
 /*----------TESTING ENDS----------*/
 
+/*Footer Form*/
 
 /*TODO: FIX CHECKBOX*/
