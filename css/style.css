@@ -57,23 +57,33 @@ body {
     align-items: stretch;
     align-content: space-around;
     /*CHANGE LATER*/
-    height: 510px;
+    min-height: 510px;
     /*CHANGE LATER*/
 }
 
 .main-form label{
     margin: 5px;
-    flex: 1;
     font-family: 'Nunito';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     color: #767676;
     display: flex;
-    align-items: flex-end;
+    align-items: flex-start;
 }
 
 /*----------TESTING----------*/
+
+.label-form {
+    display: flex;
+    flex-flow: column;
+}
+
+.label-form p{
+    margin: 0;
+    display:flex;
+    
+}
 
 .form-type-1 {
     box-sizing: border-box;
@@ -129,29 +139,7 @@ body {
 
 .checkbox {
 
-    box-sizing: border-box;
-
-    width: 20px;
-    height: 20px;
-
-    background: #0DBDBD;
-    border: 2px solid #0DBDBD;
-    border-radius: 2px;
-
-    /* Inside auto layout */
-
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-
-    width: 12px;
-    height: 9.42px;
-    left: calc(50% - 12px/2 - 0.01px);
-    top: calc(50% - 9.42px/2 + 0.29px);
-
-    /* Surface */
-
-    background: #FFFFFF;
+    
 }
 
 .checkbox-text {
@@ -218,3 +206,6 @@ flex-grow: 0;
 }
 
 /*----------TESTING ENDS----------*/
+
+
+/*TODO: FIX CHECKBOX*/
