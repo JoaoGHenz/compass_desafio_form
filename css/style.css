@@ -2,9 +2,9 @@ body {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin: 100px;
-    align-items: flex-end;
+    align-content: center;
     background-color: #E5E5E5;
+    min-height: 100vh;
 }
 
 * {
@@ -88,9 +88,13 @@ body {
 }
 
 .label-form p{
-    margin: 0;
+    margin: 2px;
     display:flex;
     
+}
+
+.label-form p::after{
+    content: " *";
 }
 
 .form-type-1 {
@@ -186,6 +190,7 @@ body {
 .checkbox-text {
     width: 214px;
     height: 18px;
+    font-family: 'Nunito', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -252,4 +257,13 @@ flex-grow: 0;
 
 /*Footer Form*/
 
-/*TODO: FIX CHECKBOX*/
+
+@media screen and (max-width: 700) {
+    body {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        flex-flow: column wrap;
+        margin: 0;
+    }
+}
