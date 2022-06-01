@@ -61,7 +61,6 @@ body {
 .main-form {
     display:flex;
     flex-flow: row wrap;
-    align-items: stretch;
     align-content: space-around;
     /*CHANGE LATER*/
     /*AAA*/
@@ -98,7 +97,28 @@ body {
     content: " *";
 }
 
+/*Ordering Gambiarra*/
+
+.label-order-1 {
+    order: 1;
+}
+
+.label-order-2 {
+    order: 2;
+}
+
+.label-order-3 {
+    order: 3;
+}
+
+.label-order-4 {
+    order: 4;
+}
+
+/*Ordering Gambiarra ends*/
+
 .form-type-1 {
+    order: 2;
     box-sizing: border-box;
 
     width: 515px;
@@ -117,6 +137,7 @@ body {
 
 
 .form-type-2 {
+    order: 1;
     box-sizing: border-box;
 
     width: 330px;
@@ -134,6 +155,7 @@ body {
 }
 
 .form-type-3 {
+    order: 2;
     box-sizing: border-box;
 
     width: 162px;
