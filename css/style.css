@@ -281,10 +281,14 @@ flex-grow: 0;
 /*Footer Form*/
 
 
-@media only screen and (max-height: 810px) {
+@media only screen and (max-width: 810px) {
 
+    body {
+        height: 0;
+    }
 
     .main-panel {
+        height: 100%;
         border-radius: 0%;
         width: 100%;
     }
