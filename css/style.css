@@ -97,6 +97,10 @@ body {
     content: " *";
 }
 
+.label-form p:last-child::after{
+    content: " ";
+}
+
 /*Ordering Gambiarra*/
 
 .label-order-1 {
@@ -277,19 +281,23 @@ flex-grow: 0;
 /*Footer Form*/
 
 
-@media only screen and (max-width: 360px) and (max-height: 760px) {
+@media only screen and (max-height: 810px) {
+
 
     .main-panel {
         border-radius: 0%;
-        height: 760px;
-        width: 360px;
+        width: 100%;
     }
 
     .main-form {
-        max-width: 360px;
+        max-width: 90%;
     }
 
     .label-form {
+        width: 100%;
+    }
+
+    .form-type-2{
         width: 100%;
     }
 
@@ -298,7 +306,38 @@ flex-grow: 0;
 
     }
 
+    .label-order-1, .label-order-3 {
+        order: 1;
+    }
+
+    .label-order-2, .label-order-4 {
+        align-content: space-between;
+        width: 47%;
+        
+    }
+
+    .form-type-3 {
+        width: 100%;
+    }
+
+
+
+
     #form-input-name {
+        width: 100%;
+    }
+
+    .footer-form {
+        max-width: 90%;
+        flex-flow: column;
+        justify-content: space-around;
+    }
+
+    .submit {
+        width: 100%;
+    }
+    
+    .submit input {
         width: 100%;
     }
 }
