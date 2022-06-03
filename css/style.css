@@ -36,6 +36,10 @@ body {
 
 }
 
+.panel-title h1 {
+    margin-bottom: 30px;
+}
+
 .panel-title .cloud{
     margin-top: 30px;
 }
@@ -80,15 +84,14 @@ body {
     align-items: space-around;
 }
 
-/*----------TESTING----------*/
-
 .label-form {
     display: flex;
     flex-flow: column;
+    order: 1;
 }
 
 .label-form p{
-    margin: 2px;
+    margin: 3px 0;
     display:flex;
     
 }
@@ -100,6 +103,17 @@ body {
 .label-form p:last-child::after{
     content: " ";
 }
+
+.form-title{
+    order:0;
+}
+
+.input-error {
+    font-family: 'Nunito';
+    color: #FF4B4B;
+    order: 2;
+}
+
 
 /*Ordering Gambiarra*/
 
@@ -192,6 +206,7 @@ body {
 .checkbox {
     display: flex;
     align-items: center;
+    accent-color: #0DBDBD;
     
 }
 
@@ -202,7 +217,6 @@ body {
     height: 20px;
 
     color: white;
-    accent-color: #0DBDBD;
     border: 2px solid #0DBDBD;
     border-radius: 2px;
 
@@ -300,15 +314,11 @@ flex-grow: 0;
 
     .label-form {
         width: 100%;
+        margin: 0;
     }
 
     .form-type-2{
         width: 100%;
-    }
-
-    .main-form label{
-        margin: 0;
-
     }
 
     .label-order-1, .label-order-3 {
@@ -336,6 +346,7 @@ flex-grow: 0;
         max-width: 90%;
         flex-flow: column;
         justify-content: space-around;
+        align-items: flex-start;
     }
 
     .submit {
