@@ -54,3 +54,7 @@ function register() {
     //const checkBox = document.getEl
 
 }
+
+function goBack() {
+    
+}
