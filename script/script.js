@@ -37,5 +37,14 @@ function register() {
             errorMsg[3].innerHTML = "";
         }
 
+        //Date validation check
+        let date = new Date(inputForm[4].value);
+        let age = 2022 - date.getFullYear() 
+        if(age < 18) {
+            errorMsg[4].innerHTML = errorArray[4] + " Invalid";
+        } else {
+            errorMsg[4].innerHTML = "";
+        }
+
 
 }
