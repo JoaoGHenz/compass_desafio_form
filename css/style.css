@@ -206,8 +206,7 @@ body {
 .checkbox {
     display: flex;
     align-items: center;
-    accent-color: #0DBDBD;
-    
+    accent-color: #0DBDBD;  
 }
 
 .checkbox input {
@@ -249,6 +248,11 @@ body {
     flex: none;
     order: 1;
     flex-grow: 0;
+}
+
+.checkbox .input-error {
+    width: calc(100% + 20px);
+    align-self: self-start;
 }
 
 
