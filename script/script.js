@@ -29,6 +29,13 @@ function register() {
         } else {
             errorMsg[2].innerHTML = "";
         }
+        
+        //Phone validation check
+        if(inputForm[3].value.length != 11 || inputForm[3].value.match(/\D/g)) {
+            errorMsg[3].innerHTML = errorArray[3] + " Invalid";
+        } else {
+            errorMsg[3].innerHTML = "";
+        }
 
 
 }
