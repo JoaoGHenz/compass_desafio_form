@@ -295,10 +295,31 @@ order: 1;
 flex-grow: 0;
 }
 
-/*----------TESTING ENDS----------*/
-
 /*Footer Form*/
 
+/*Success Panel*/
+
+.success-panel {
+    display: flex;
+    flex-flow: column;
+
+}
+
+.success-panel .panel-title {
+    height: 100%;
+    justify-content: space-evenly;
+
+}
+
+.success-panel .button {
+    width: 269px;
+    height: 177px;
+    left: 378px;
+    top: 654px;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 18px;
+}
 
 @media only screen and (max-width: 810px) {
 
