@@ -23,4 +23,12 @@ function register() {
             errorMsg[1].innerHTML = "";
         }
 
+        //Password validation check
+        if(inputForm[2].value.match(/[^6-9]/)) {
+            errorMsg[2].innerHTML = errorArray[2] + " Invalid";
+        } else {
+            errorMsg[2].innerHTML = "";
+        }
+
+
 }
