@@ -327,7 +327,7 @@ flex-grow: 0;
         height: 0;
     }
 
-    .main-panel {
+    .main-panel, .success-panel{
         height: 100%;
         border-radius: 0%;
         width: 100%;
@@ -376,9 +376,15 @@ flex-grow: 0;
 
     .submit {
         width: 100%;
+        justify-content: center;
+        display: flex;
     }
     
     .submit input {
         width: 100%;
+    }
+
+    #bOK {
+        align-self: center;
     }
 }
