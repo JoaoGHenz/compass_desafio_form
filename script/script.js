@@ -60,9 +60,9 @@ function register() {
     //Footer Form Validation Check
     //Checkbox Validation check
 
-    const checkBox = document.getElementById()
+    //const checkBox = document.getEl
 
-    //Check if all elements are true
+    //
     if(bIsOK) {  
         document.getElementById("s-panel").style.display = "flex";
         document.getElementById("m-panel").style.display = "none";
