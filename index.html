@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,400i,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <section class="main-panel" id="m-panel">
+        <section class="panel-title">
+            <img src="img/cloud.png" alt="Main Image" class="cloud">
+            <h1>Intern Sign Up</h1>
+        </section>
+        <form class="form" name="form">
+            <div class="main-form">
+                <label for="form-input-name" class="label-form">
+                    <p class="form-title">Full Name</p>
+                    <input name="input-name" type="text" id="form-input-name" class="form-input form-type-1"
+                        placeholder="Name">
+                    <p class="input-error"></p>
+                </label>
+                <label for="form-input-email" class="label-form label-order-1">
+                    <p class="form-title">Email</p>
+                    <input type="email" id="form-input-email" class="form-input form-type-2" placeholder="foo@bar.com">
+                    <p class="input-error"></p>
+                </label>
+                <label for="form-input-password" class="label-form label-order-3">
+                    <p class="form-title">Password</p>
+                    <input type="text" id="form-input-password" class="form-input form-type-2">
+                    <p class="input-error"></p>
+                </label>
+                <label for="form-input-tel" class="label-form label-order-2">
+                    <p class="form-title">Phone</p>
+                    <input type="tel" id="form-input-tel" class="form-input form-type-3" placeholder="(83) 00000-0000">
+                    <p class="input-error"></p>
+                </label>
+                <label for="form-input-birthday" class="label-form label-order-4">
+                    <p class="form-title">Birthday</p>
+                    <input type="date" id="form-input-birthday" class="form-input form-type-3" placeholder="yyyy/mm/dd">
+                    <p class="input-error"></p>
+                </label>
+            </div>
+
+            <div class="footer-form">
+                    <label class="checkbox">
+                        <div>
+                            <input type="checkbox" id="checkbox-confirm">
+                            <p class="checkbox-text">I accept the terms and privacy</p>
+                        </div>
+                        <p class="input-error"></p>
+                    </label>
+                    <label class="submit"><input class="button" id="bRegister" type="button" value="Register"
+                            onclick="register()"></label>
+                </div>
+        </form>
+    </section>
+
+    <section class="main-panel success-panel" id="s-panel">
+        <div class="panel-title">
+            <img src="img/cloud.png" alt="Main Image" class="cloud">
+            <h1>Success!</h1>
+            <label class="submit"><input class="button" id="bOK" type="button" value="Go Back!"
+                onclick="goBack()"></label>
+        </div>
+    </section>
+
+    <script src="script/script.js"></script>
+</body>
+
+</html>
