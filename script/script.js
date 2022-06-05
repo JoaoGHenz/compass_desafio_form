@@ -80,4 +80,16 @@ function register() {
 function goBack() {
     document.getElementById("s-panel").style.display = "none";
     document.getElementById("m-panel").style.display = "flex";
+    
+    const inputForm = document.getElementsByClassName("form-input")
+
+    for(let i = 0; i < 5; i++) {
+        inputForm[i].value = "";
+    }
+
+    const checkBox = document.getElementById("checkbox-confirm")
+
+    checkBox.checked = false;
+
+
 }
