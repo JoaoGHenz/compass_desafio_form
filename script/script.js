@@ -60,7 +60,14 @@ function register() {
     //Footer Form Validation Check
     //Checkbox Validation check
 
-    //const checkBox = document.getEl
+    const checkBox = document.getElementById("checkbox-confirm")
+    if(!checkBox.checked) {
+        bIsOK = false;
+        errorMsg[5].innerHTML = "You must accept the terms";
+    }
+    else {
+        errorMsg[5].innerHTML = "";
+    }
 
     //
     if(bIsOK) {  
