@@ -31,7 +31,7 @@ function register() {
         errorMsg[1].innerHTML = "";
     }
 
-    //Password validation check
+    //Password validation check.
     if(inputForm[2].value.match(/[^6-9]/) || inputForm[2].value.length == 0) {
         errorMsg[2].innerHTML = errorArray[2] + " Invalid";
         bIsOK = false;
