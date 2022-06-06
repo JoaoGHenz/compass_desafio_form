@@ -32,7 +32,7 @@ function register() {
     }
 
     //Password validation check
-    if(inputForm[2].value.match(/[^6-9]/) || inputForm[1].value.length == 0) {
+    if(inputForm[2].value.match(/[^6-9]/) || inputForm[2].value.length == 0) {
         errorMsg[2].innerHTML = errorArray[2] + " Invalid";
         bIsOK = false;
     } else {
